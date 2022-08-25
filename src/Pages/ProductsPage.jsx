@@ -16,6 +16,7 @@ import Allbrands from "../Components/Allbrands";
 
 const Productspage = () => {
   return (
+    //products page layout completed
     <Box border="1px solid grey">
       <Flex justifyContent="center" marginTop="150px">
         <Box width="25%" height="250vh" justifyContent="center">
