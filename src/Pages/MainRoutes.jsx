@@ -1,17 +1,19 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Login from './Login'
-import Signup from "./Signup"
-
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "../Components/Navbar";
+import Login from "./Login";
+import Productspage from "./ProductsPage";
 const MainRoutes = () => {
   return (
     <div>
-        <Routes>
-            <Route path='/login' element={<Login/>}/>
-            <Route path='/signup' element={<Signup/>}/>
-        </Routes>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Productspage />} />
+        <Route path="/login" element={<Login />} />
+      
+      </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default MainRoutes
+export default MainRoutes;
