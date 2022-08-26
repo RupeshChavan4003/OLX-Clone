@@ -4,6 +4,7 @@ import MainRoutes from './Pages/MainRoutes';
 // import Signup from "./Pages/Signup"
 import logo from "./logo.svg";
 import Productspage from "./Pages/ProductsPage";
+import HomePage from './Components/HomePage';
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       <MainRoutes/>
 
       <Productspage />
+      <HomePage/>
 
     </div>
   );
