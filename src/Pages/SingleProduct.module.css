@@ -1,0 +1,136 @@
+.carmain{
+    display: flex;
+    gap: 50px;
+    margin-left: 150px;
+    margin-top: 50px;
+   
+}
+.carleft{
+    width: 60%;
+    /* border: 1px solid red; */
+    line-height: 40px;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    height: 180px;
+   
+   
+}
+.diselcar{
+    display: flex;
+    gap: 20px;
+}
+.diselcar1{
+    display: flex;
+    gap: 5px;
+    margin-left: 5px;
+    
+}
+.carfeatured{
+    background-color: yellow;
+    border-radius: 3px;
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 5px;
+}
+.carbrandsize{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #002f34;
+    margin-left: 5px;
+}
+.carflu{
+    font-size: larger;
+    margin-left: 5px;
+    color: #002f34;
+}
+.caroverview{
+    width: 54%;
+    margin-left: 150px;
+   margin-top: -70px;
+    /* border: 1px solid red; */
+    line-height: 40px;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.caroverviewsize{
+    font-size: x-large;
+    font-weight: bold;
+    color: #406367;
+    margin-left: 5px;
+}
+.caroverviewinner{
+    display: flex;
+    gap: 150px;
+}
+.carowner{
+    display: flex;
+}
+.carownersize{
+    font-size: large;
+    font-weight: bold;
+    color: #002f34;
+}
+.cardescdiv{
+    width: 54%;
+    margin-left: 150px;
+   margin-top:20px ;
+    /* border: 1px solid red; */
+    line-height: 40px;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.cardescrip{
+    font-size: 18px;
+    font-weight: 400;
+    color: #406367;
+    line-height: 30px;
+    margin-left: 5px;
+}
+.carpricetag{
+    /* border: 1px solid red; */
+    width: 350px;
+    text-align: left;
+    line-height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+}
+.carpriceboldness{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+.carmakeoffer{
+    /* text-align: center; */
+   
+    width: 300px;
+    margin-left: 5px;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #002f34;
+    color: white;
+    border-radius: 3px;
+}
+.carsoldby{
+    border: 1px solid blue;
+    margin-top: 10px;
+    width: 350px;
+    text-align: left;
+    
+    
+}
+
+.carpostdate{
+    display: flex;
+    gap: 4px;
+    margin-left: 5px;
+}
+.carchat{
+    width: 300px;
+    margin-left: 5px;
+    font-size: x-large;
+    font-weight: bold;
+    background-color:white;
+    color:#002f34;
+    border-radius: 3px;
+    border: 2px solid black;
+}
