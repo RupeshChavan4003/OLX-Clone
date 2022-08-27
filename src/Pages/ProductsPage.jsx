@@ -11,6 +11,8 @@ import {
   Text,
 } from "@chakra-ui/react";
 
+import { Link } from "react-router-dom";
+
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Allbrands from "../Components/Allbrands";
@@ -29,13 +31,13 @@ const Productspage = () => {
   }, []);
   return (
     //products page layout completed
-    <Box border="1px solid grey">
+    <Box>
       <Flex justifyContent="center" marginTop="150px">
         <Box
           width="25%"
           height="250vh"
           justifyContent="center"
-          border="1px solid black"
+          // border="1px solid black"
         >
           <Box
             height="18vh"
@@ -46,7 +48,7 @@ const Productspage = () => {
             margin="auto"
             marginTop="50px"
             padding="5px"
-            border="1px solid black"
+            // border="1px solid black"
           >
             <Box textAlign="left">
               <Text fontSize="xl" fontWeight="600">
@@ -74,13 +76,15 @@ const Productspage = () => {
             marginTop="50px"
             padding="5px"
             textAlign="left"
-            border="1px solid black"
+            // border="1px solid black"
             // border="1px solid black"
           >
             <Text fontSize="xl" fontWeight="600">
               LOCATIONS
             </Text>
-            <Text fontWeight="500">Delhi</Text>
+            <Text fontWeight="500" bg="#c8f8f6 ">
+              Delhi
+            </Text>
           </Box>
 
           {/* <Box textAlign="left">
@@ -102,7 +106,7 @@ const Productspage = () => {
             justifyContent="center"
             margin="auto"
             marginTop="40px"
-            border="1px solid grey"
+            // border="1px solid grey"
             borderRadius="3px"
             height="70vh"
             width="85%"
@@ -148,7 +152,7 @@ const Productspage = () => {
           <Box
             height="21vh"
             width="85%"
-            border="1px solid grey"
+            // border="1px solid grey"
             borderRadius="3px"
             justifyContent="center"
             margin="auto"
@@ -166,7 +170,7 @@ const Productspage = () => {
             </Box>
           </Box>
         </Box>
-        <Box width="65%" height="250vh" border="1px solid grey">
+        <Box width="65%" height="250vh">
           <GridItem>
             <Grid
               templateColumns="repeat(3,1fr)"
@@ -177,7 +181,11 @@ const Productspage = () => {
             >
               {data.length > 0 &&
                 data.map((item) => {
-                  return <Singleproduct key={item.id} {...item} />;
+                  return (
+                    <Link to={`/products/${item.id}`}>
+                      <Singleproduct key={item.id} {...item} />;
+                    </Link>
+                  );
                 })}
             </Grid>
           </GridItem>
