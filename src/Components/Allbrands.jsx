@@ -18,7 +18,7 @@ const Allbrands = () => {
 
   const brandsList = searchParams.getAll("brand");
 
-  console.log(brandsList);
+  //console.log(brandsList);
   const [brand, setBrand] = useState([]);
 
   const [sortBy, setSortBy] = useState("");
@@ -165,6 +165,26 @@ const Allbrands = () => {
             onChange={handleCheckbox}
           >
             TVS
+          </Checkbox>
+
+          <Checkbox
+            color="grey"
+            value="Samsung"
+            size="lg"
+            defaultChecked={brand.includes("Samsung")}
+            onChange={handleCheckbox}
+          >
+            Samsung
+          </Checkbox>
+
+          <Checkbox
+            color="grey"
+            value="Apple"
+            size="lg"
+            defaultChecked={brand.includes("Apple")}
+            onChange={handleCheckbox}
+          >
+            Apple
           </Checkbox>
 
           {/*<Checkbox
