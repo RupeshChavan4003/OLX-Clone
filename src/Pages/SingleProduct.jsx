@@ -1,29 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from "./SingleProduct.module.css"
+import SwipeToSlide from './BrandSlider'
+import { useDispatch } from 'react-redux'
+import { useParams } from 'react-router-dom'
+import { getAllProducts } from '../Redux/ProductsReducer/action'
+
 const SingleProduct = () => {
+    const dispatch = useDispatch();
+    const {id} = useParams();
+    const data = useSelector((state) => state.ProductsReducer.data);
+    const [currentCarData,setCurrentCarData] = useState({});
+
+    useEffect(() => {
+        if(data.length === 0){
+            dispatch(getAllProducts());
+        }
+    },[dispatch,data.length])
+
+    useEffect(() => {
+        if(id){
+            const currentCar = data.find((item) => data.id === id);
+            currentCarData && setCurrentCarData(currentCar);
+        }
+    },[id,data])
   return (
     <>
-        <div><img src="https://apollo-singapore.akamaized.net/v1/files/6dh88e765dti-IN/image;s=780x0;q=60" alt="" /></div>
+        <SwipeToSlide/>
         <div className={styles.carmain}>
             <div className={styles.carleft}>
                 <div>
                     <button className={styles.carfeatured}>Featured</button>
-                    <h1 className={styles.carbrandsize}>Hyundai Verna (2015)</h1>
-                    <h2 className={styles.carflu}>Fluidic 1.6 CRDi SX Opt</h2>
+                    <h1 className={styles.carbrandsize}>{currentCarData.brand}</h1>
+                    <h2 className={styles.carflu}>{currentCarData.model}</h2>
                 </div>
                 <div className={styles.diselcar}>
                     <div className={styles.diselcar1}>
                         <div><img src="https://statics.olx.in/olxin/buyers/items/v1/inspection/light/petrol_1x.svg" style={{height:"40px",width:"13px"}} alt="" /></div>
-                        <div><p>Disel</p></div>
+                        <div><p>{currentCarData.fuel}</p></div>
                     </div>
                     <div className={styles.diselcar1}>
                         <div><img src="https://statics.olx.in/olxin/buyers/items/v1/inspection/light/mileage_1x.svg" style={{height:"40px",width:"13px"}} alt="" /></div>
-                        <div><p>46000.0 KM</p></div>
+                        <div><p>{currentCarData.distance} KM</p></div>
                     </div>
                     <div>
                     <div className={styles.diselcar1}>
                         <div><img src="https://statics.olx.in/olxin/buyers/items/v1/inspection/light/transmission_1x.svg" style={{height:"40px",width:"13px"}} alt="" /></div>
-                        <div><p>Manual</p></div>
+                        <div><p>{currentCarData.transmission}</p></div>
                     </div>
                     </div>
                     
@@ -31,16 +53,16 @@ const SingleProduct = () => {
             </div>
             <div>
                 <div className={styles.carpricetag}>
-                    <div><h1 className={styles.carpriceboldness}>₹ 6,50,000</h1></div>
+                    <div><h1 className={styles.carpriceboldness}>₹ {currentCarData.price}</h1></div>
                     <div><button className={styles.carmakeoffer}>Make Offer</button></div>
                   
                 </div>
               <div className={styles.carsoldby}>
                 <div><p style={{marginLeft:"5px",fontSize:"20px"}}>Sold By</p></div>
-                <div><h1 className={styles.carpriceboldness}>Jolly Motors</h1></div>
+                <div><h1 className={styles.carpriceboldness}>{currentCarData.sellerName}</h1></div>
                 <div className={styles.carpostdate}>
                     <div>Post date :</div>
-                    <div>08/12/2022</div>
+                    <div>{currentCarData.postDate}</div>
                 </div>
                 <div><button className={styles.carchat}>Chat with seller</button></div>
                
@@ -54,21 +76,21 @@ const SingleProduct = () => {
                     <div><img src="https://statics.olx.in/olxin/buyers/items/v1/inspection/light/first_owner_1x.svg" style={{height:"50px",width:"40px"}} alt="" /></div>
                     <div>
                         <p>Owner</p>
-                        <h1 className={styles.carownersize}>1st</h1>
+                        <h1 className={styles.carownersize}>{currentCarData.totalOwners}</h1>
                     </div>
                 </div>
                 <div className={styles.carowner}>
                     <div><img src="https://statics.olx.in/olxin/buyers/items/v1/inspection/light/location_1x.svg" style={{height:"50px",width:"40px"}} alt="" /></div>
                     <div>
                         <p>Location</p>
-                        <h1 className={styles.carownersize}>Makarba Village</h1>
+                        <h1 className={styles.carownersize}>{currentCarData.address}</h1>
                     </div>
                 </div>
                 <div className={styles.carowner}>
                     <div><img src="https://statics.olx.in/olxin/buyers/items/v1/inspection/light/inspectionDate_1x.svg" style={{height:"50px",width:"40px"}} alt="" /></div>
                     <div>
                         <p>Posting Date</p>
-                        <h1 className={styles.carownersize}>25-AUG-22</h1>
+                        <h1 className={styles.carownersize}>{currentCarData.postDate}</h1>
                     </div>
                 </div>
             </div>
@@ -76,8 +98,8 @@ const SingleProduct = () => {
         <div className={styles.cardescdiv}>
             <div><h1 className={styles.caroverviewsize}>Description</h1></div>
             <div className={styles.cardescrip}>
-                <p>2 key available</p>
-                <p>2 key available</p>
+                <p>{currentCarData.product_desc}</p>
+                
             </div>
         </div>
 
