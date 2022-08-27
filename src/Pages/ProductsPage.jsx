@@ -11,14 +11,41 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-import React from "react";
+import { Link, useParams } from "react-router-dom";
+
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Allbrands from "../Components/Allbrands";
+import SearchBrand from "../Components/SearchBrand";
+import Singleproduct from "../Components/Singleproduct";
+import { getAllProducts } from "../Redux/ProductsReducer/action";
+
+import { useSearchParams } from "react-router-dom";
 
 const Productspage = () => {
+  const dispatch = useDispatch();
+  const { category } = useParams();
+  let data = useSelector((state) => state.ProductsReducer.data);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const { brand } = searchParams;
+  console.log(brand);
+
+  //const { brand } = searchParams;
+
+  //console.log(data);
+  useEffect(() => {
+    dispatch(getAllProducts(category));
+  }, [category]);
   return (
-    <Box border="1px solid grey">
+    //products page layout completed
+    <Box>
       <Flex justifyContent="center" marginTop="150px">
-        <Box width="25%" height="250vh" justifyContent="center">
+        <Box
+          width="25%"
+          height="250vh"
+          justifyContent="center"
+          // border="1px solid black"
+        >
           <Box
             height="18vh"
             width="85%"
@@ -28,6 +55,7 @@ const Productspage = () => {
             margin="auto"
             marginTop="50px"
             padding="5px"
+            // border="1px solid black"
           >
             <Box textAlign="left">
               <Text fontSize="xl" fontWeight="600">
@@ -55,28 +83,52 @@ const Productspage = () => {
             marginTop="50px"
             padding="5px"
             textAlign="left"
+            // border="1px solid black"
+            // border="1px solid black"
           >
             <Text fontSize="xl" fontWeight="600">
               LOCATIONS
             </Text>
-            <Text fontWeight="500">Delhi</Text>
+            <Text fontWeight="500" bg="#c8f8f6 ">
+              Delhi
+            </Text>
+          </Box>
+
+          {/* <Box textAlign="left">
+            <Text fontSize="2xl" color="grey" paddingLeft="15px">
+              Filters
+            </Text>
+          </Box> */}
+
+          <Box
+            width="90%"
+            justifyContent="center"
+            margin="auto"
+            marginTop="10px"
+          >
+            <SearchBrand />
           </Box>
 
           <Box
             justifyContent="center"
             margin="auto"
             marginTop="40px"
-            border="1px solid grey"
+            // border="1px solid grey"
             borderRadius="3px"
             height="70vh"
             width="85%"
             padding="5px"
           >
-            <Text fontFamily="Muli,sans-serif" fontSize="13px">
+            <Text
+              fontFamily="Muli,sans-serif"
+              fontSize="xl"
+              fontWeight="semibold"
+            >
               All Brands
             </Text>
+
             <Box>
-              <Allbrands />
+              <Allbrands category={category} />
             </Box>
             <Box marginTop="35px"></Box>
           </Box>
@@ -107,7 +159,7 @@ const Productspage = () => {
           <Box
             height="21vh"
             width="85%"
-            border="1px solid grey"
+            // border="1px solid grey"
             borderRadius="3px"
             justifyContent="center"
             margin="auto"
@@ -115,7 +167,7 @@ const Productspage = () => {
             padding="5px"
           >
             <Box width="90%" justifyContent="center" margin="auto">
-              <Text fontFamily="Muli,sans-serif" fontSize="15px">
+              <Text fontFamily="Muli,sans-serif" fontSize="lg">
                 What do you want us to launch next?
               </Text>
               <Text color="grey" fontSize="15px">
@@ -125,7 +177,26 @@ const Productspage = () => {
             </Box>
           </Box>
         </Box>
-        <Box width="65%" height="250vh" border="1px solid grey"></Box>
+        <Box width="65%" height="250vh">
+          <GridItem>
+            <Grid
+              templateColumns="repeat(3,1fr)"
+              templateRows="repeat(6,1fr)"
+              gap="9px"
+              paddingLeft="7px"
+              marginTop="50px"
+            >
+              {data.length > 0 &&
+                data.map((item) => {
+                  return (
+                    <Link to={`/products/${item.category}/${item.id}`}>
+                      <Singleproduct key={item.id} {...item} />;
+                    </Link>
+                  );
+                })}
+            </Grid>
+          </GridItem>
+        </Box>
       </Flex>
     </Box>
 
