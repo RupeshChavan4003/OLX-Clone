@@ -5,12 +5,13 @@ import {
   GET_ALLPRODUCTS_SUCCESS,
 } from "./actionType";
 
-export const getAllProducts = (params) => (dispatch) => {
+export const getAllProducts = (category, params) => (dispatch) => {
   dispatch({ type: GET_ALLPRODUCTS_REQUEST });
 
   return axios
-    .get("http://localhost:8080/cars", params)
-    .then((res) => {
+
+    .get(`http://localhost:8080/${category}`, params)
+  .then((res) => {
       // console.log(res.data);
       dispatch({ type: GET_ALLPRODUCTS_SUCCESS, payload: res.data });
     })

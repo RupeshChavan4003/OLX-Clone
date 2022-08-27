@@ -1,19 +1,29 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Navbar from "../Components/Navbar";
+
+import Subnav from "../Components/Subnav";
+
+
+
 import HomePage from "./Homepage";
+
 import Login from "./Login";
 import Productspage from "./ProductsPage";
 import SingleProductPage from "./SingleProductPage";
 const MainRoutes = () => {
   return (
     <div>
-      <Navbar />
+      <Subnav />
       <Routes>
+
+        <Route path="/" element={<Dummy />} />
+
         <Route path="/" element={<HomePage/>} />
         <Route path="/product" element={<Productspage/>} />
+
         <Route path="/login" element={<Login />} />
-        <Route path="/products/:id" element={<SingleProductPage />} />
+        <Route path="/products/:category/:id" element={<SingleProductPage />} />
+        <Route path="/products/:category" element={<Productspage />} />
       </Routes>
     </div>
   );
