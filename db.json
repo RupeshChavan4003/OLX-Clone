@@ -975,6 +975,15 @@
       "transmission": "Manual",
       "product_desc": "Chevrolet Cruze 2011",
       "type": "cars"
+    },
+    {
+      "brand": "Hyundai",
+      "year": "2121",
+      "description": "",
+      "price": "",
+      "img": "",
+      "state": "",
+      "id": 35
     }
   ],
   "motorcyles": [
@@ -4088,4 +4097,3 @@
     }
   ]
 }
-
