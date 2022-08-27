@@ -11,7 +11,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -20,15 +20,22 @@ import SearchBrand from "../Components/SearchBrand";
 import Singleproduct from "../Components/Singleproduct";
 import { getAllProducts } from "../Redux/ProductsReducer/action";
 
+import { useSearchParams } from "react-router-dom";
+
 const Productspage = () => {
   const dispatch = useDispatch();
-
+  const { category } = useParams();
   let data = useSelector((state) => state.ProductsReducer.data);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const { brand } = searchParams;
+  console.log(brand);
+
+  //const { brand } = searchParams;
 
   //console.log(data);
   useEffect(() => {
-    dispatch(getAllProducts());
-  }, []);
+    dispatch(getAllProducts(category));
+  }, [category]);
   return (
     //products page layout completed
     <Box>
@@ -121,7 +128,7 @@ const Productspage = () => {
             </Text>
 
             <Box>
-              <Allbrands />
+              <Allbrands category={category} />
             </Box>
             <Box marginTop="35px"></Box>
           </Box>
@@ -182,7 +189,7 @@ const Productspage = () => {
               {data.length > 0 &&
                 data.map((item) => {
                   return (
-                    <Link to={`/products/${item.id}`}>
+                    <Link to={`/products/${item.category}/${item.id}`}>
                       <Singleproduct key={item.id} {...item} />;
                     </Link>
                   );

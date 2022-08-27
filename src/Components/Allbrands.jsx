@@ -10,10 +10,12 @@ import {
 } from "@chakra-ui/react";
 import { useSearchParams } from "react-router-dom";
 
+//const category= useParams
+
 import { useDispatch } from "react-redux/es/exports";
 import { getAllProducts } from "../Redux/ProductsReducer/action";
 
-const Allbrands = () => {
+const Allbrands = ({ category }) => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const brandsList = searchParams.getAll("brand");
@@ -48,7 +50,7 @@ const Allbrands = () => {
     if (brand) {
       setSearchParams({ brand: brand });
 
-      dispatch(getAllProducts({ params: { brand } }));
+      dispatch(getAllProducts(category, { params: { brand } }));
     }
   }, [brand, setBrand]);
 
@@ -57,7 +59,7 @@ const Allbrands = () => {
       setSearchParams({ brand: searchParams.getAll("brand"), sortBy });
 
       dispatch(
-        getAllProducts({
+        getAllProducts(category, {
           params: {
             brand: searchParams.getAll("brand"),
             _sort: "price",
