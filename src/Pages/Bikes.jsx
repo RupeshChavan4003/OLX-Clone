@@ -1,4 +1,4 @@
-import { Link } from '@chakra-ui/react'
+import { Link } from "react-router-dom";
 import React from 'react'
 import { useState } from 'react'
 import "./ModuleData.css"
@@ -35,7 +35,7 @@ const  Bikes = () => {
     
   return (
     <div>
-        <form onSubmit={funSubmit}>
+        <form >
       <h1 className='mobile_div1_title'>Post Your Ad</h1>
       <div className='mobile_div1'>
           <p className='mobile_div1_innerTitle'>SELECTED 
@@ -157,7 +157,7 @@ const  Bikes = () => {
          
           <p className='mobile_div1_innerTitle_set_A_price'>REVIEW YOUR DETAILS</p>
           {/* <input  className=''>POST NOW</input> */}
-          <input type="submit" className='mobile_div_button_post'  value="Post Now"/>
+        <Link to={"/"}><button  className='mobile_div_button_post'  >Post Now</button></Link>
           <br />
           <br />
           

@@ -1,4 +1,4 @@
-import { Link } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import React from "react";
 import "./ModuleData.css";
 
@@ -157,7 +157,7 @@ const Mobile = () => {
         <p className="mobile_div1_innerTitle_set_A_price">
           REVIEW YOUR DETAILS
         </p>
-        <button className="mobile_div_button_post">POST NOW</button>
+        <Link to={"/"}><button  className='mobile_div_button_post'  >Post Now</button></Link>
       </div>
     </div>
   );
