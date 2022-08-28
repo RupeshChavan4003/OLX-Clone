@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import "./ModuleData.css"
 import {
@@ -39,10 +40,11 @@ const AddData = () => {
 
     <Box sx={{width:"50%"}}>
     <AccordionPanel pb={0} sx={{textAlign:"start",paddingRight:"50px"}}>
-   <p  className='p_hovering'>Cars</p>
-  
+    <Link to={"/carpage"}><p  className='p_hovering'>Cars</p>
+   </Link>
     </AccordionPanel>
     </Box>
+    
     </Box>
     
 
@@ -94,10 +96,11 @@ const AddData = () => {
 
     <Box sx={{width:"50%"}}>
     <AccordionPanel pb={0} sx={{textAlign:"start",paddingRight:"50px"}}>
+   <Link to={"/mobile"}>
    <p  className='p_hovering'>Mobiles</p>
    <p className='p_hovering'>Accessories</p>
    <p className='p_hovering'>Tablets</p>
-  
+   </Link>
   
     </AccordionPanel>
     </Box>
@@ -153,11 +156,12 @@ const AddData = () => {
 
     <Box sx={{width:"50%"}}>
     <AccordionPanel pb={0} sx={{textAlign:"start",paddingRight:"50px"}}>
+   <Link to={"/bikes"}>
    <p  className='p_hovering'>MotarCycles</p>
    <p className='p_hovering'>Scooters</p>
    <p className='p_hovering'>Spare Parts</p>
    <p className='p_hovering'>Bicylcles</p>
- 
+   </Link>
 
   
     </AccordionPanel>

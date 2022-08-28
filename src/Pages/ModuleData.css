@@ -1,0 +1,222 @@
+/* my csss */
+
+*{
+    border-radius: 1%;
+  }
+  .post_your_add {
+   
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(86, 86, 86);
+    font-weight: lighter;
+    /* border-radius: 5%; */
+  }
+  .adddata_textfont{
+    font-size: 0.7rem;
+  }
+  
+  .post_your_add{
+      width: 65%;
+      height: auto;
+      border: 2px rgb(245, 242, 242) solid;
+      margin: auto;
+      display: flex;
+  
+    }
+    .post_your_add_div1{
+      width: 100%;
+      height: auto;
+     
+    }
+    .post_your_add_div2{
+      width: 50%;
+      height: auto;
+      
+    }
+    .adddata_title{
+      font-size: 1.4rem;
+      padding: 2%;
+      font-weight: 550;
+      letter-spacing: -0.04rem;
+    }
+    .head_data{
+      color: rgb(37, 36, 36);
+      font-size: 1rem;
+      font-weight: 600;
+  
+      text-align: start;
+     /* padding-left: -2%; */
+      padding: 3%;
+      letter-spacing: -0.05rem;
+    }
+    
+    .p_hovering{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.68rem;
+      font-weight: lighter;
+      color: rgb(116, 113, 113);
+      width: 140%;
+      height:40px;
+      text-align: start;
+      padding-left: 5%;
+      margin-left: -5%;
+      padding-top: 5%;
+      margin-top: -4%;
+    }
+    .p_hovering:hover
+    {cursor: pointer;
+     background-color: rgba(246, 240, 540, 0.606);
+    }
+  
+   
+  
+  
+    /* second part is start from here  */
+   .mobile_div1_title{
+    font-size: 1rem;
+    letter-spacing: -0.04rem;
+    font-weight: 500;
+   }
+   .mobile_div1{
+    border: 1px gray solid;
+    width: 65%;
+    margin: auto;
+  }
+  .mobile_div1_innerTitle{
+    font-size: 1rem;
+    letter-spacing: -0.04rem;
+    font-weight: 500;
+    text-align: start;
+    padding-left: 2%;
+  }
+  .mobile_div1_innerTitle2{
+    text-align: start;
+    font-size: 0.6rem;
+    padding: 2%;
+    color: gray;
+  }
+  .mobile_div1_link1{
+    font-size: 0.8rem;
+    font-weight: 489;
+    padding-top: 1.4%;
+    
+  }
+  .mobile_div_body_title{
+    font-size: 1rem;
+    letter-spacing: -0.04rem;
+    font-weight: 500;
+    text-align: start;
+    padding: 3.5%;
+   
+  }
+  .mobile_div_body_label{
+    text-align: start;
+    font-size: 0.65rem;
+    padding-left: 3.5%;
+    margin-top: -2%;
+    color: rgb(129, 127, 127)
+    ;
+    /* margin-bottom: -3.5%; */
+  }
+  .mobile_div_select_tag{
+    width: 55%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-right: 37%;
+    height:1.8rem;
+    font-size: 0.6rem;
+    color: rgb(105, 104, 104);
+    
+   
+  }
+  .mobile_div_body_ad_Title{
+    text-align: start;
+    font-size: 0.65rem;
+    padding-left: 3.5%;
+    margin-top: -2%;
+    color: rgb(129, 127, 127)
+    ;
+    margin-bottom: 1%;
+  }
+  
+  .mobile_div_input_tag{
+    width: 55%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-right: 37%;
+    height:1.8rem;
+    font-size: 0.6rem;
+    color: rgb(105, 104, 104);
+  }
+  
+  .mobile_div_body_description{
+    text-align: start;
+    font-size: 0.65rem;
+    padding-left: 3.5%;
+    margin-top: -2%;
+    color: rgb(129, 127, 127) ;
+    margin-bottom: 2%;
+  }
+  .mobile_div_input_tag_description{
+    width: 55%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-right: 37%;
+    height:3.5rem;
+    font-size: 0.6rem;
+    color: rgb(105, 104, 104);
+    margin-top: -4%;
+  }
+  .mobile_div1_innerTitle_set_A_price{
+    font-size: 0.84rem;
+    letter-spacing: -0.04rem;
+    font-weight: 500;
+    text-align: start;
+    padding: 3.5%;
+  }
+  
+  .mobile_div_body_price{
+    text-align: start;
+    font-size: 0.65rem;
+    padding-left: 3.5%;
+    margin-top: -4%;
+    color: rgb(129, 127, 127) ;
+    margin-bottom: 1%;
+  }
+  .mobile_div_input_price{
+    width: 55%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-right: 37%;
+    height:1.8rem;
+    font-size: 0.6rem;
+    color: rgb(105, 104, 104);
+    margin-top: -4%;
+  }
+  .mobile_div_button{
+    border-bottom: 4px black solid;
+    width: 24%;
+    margin-left: 4%;
+    padding: 1%;
+    margin-right: 3%;
+    font-size: 0.7rem;
+    font-weight: 600;
+  
+  }
+  .mobile_div_button2{
+    width: 24%;
+    border-bottom: 2px gray solid;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  .mobile_div_button_post{
+    border: 1px gray solid;
+    border-radius: 5%;
+    width: 24%;
+    margin-left: 4%;
+    padding: 1%;
+    margin-right: 73%;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+    
+    /* end of mycss */

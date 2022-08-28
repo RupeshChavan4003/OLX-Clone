@@ -2592,10 +2592,10 @@
     {
       "id": 1,
       "product_name": "IPhone 11",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/40ll8qmop34i2-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/40ll8qmop34i2-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "45500",
-      "company": "Apple",
+      "brand": "Apple",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2603,10 +2603,10 @@
     {
       "id": 2,
       "product_name": "Samsung 22 Ultra ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/cwfh2v6l3wiu3-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/cwfh2v6l3wiu3-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "65000",
-      "company": "Samsung",
+      "brand": "Samsung",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2614,10 +2614,10 @@
     {
       "id": 3,
       "product_name": "Redmi note 9 pro max ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/maagjtybh1w2-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/maagjtybh1w2-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "12000",
-      "company": "Mi",
+      "brand": "Mi",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2625,10 +2625,10 @@
     {
       "id": 4,
       "product_name": " Vivo X70 Pro Plus ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/41jco0u2eq952-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/41jco0u2eq952-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "55000",
-      "company": "Vivo",
+      "brand": "Vivo",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2636,10 +2636,10 @@
     {
       "id": 5,
       "product_name": "Oppo F17 Pro 8",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/jrs1mchgu1p21-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/jrs1mchgu1p21-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "12500",
-      "company": "Oppo",
+      "brand": "Oppo",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2647,10 +2647,10 @@
     {
       "id": 6,
       "product_name": "IPhone 11",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/40ll8qmop34i2-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/40ll8qmop34i2-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "45500",
-      "company": "Apple",
+      "brand": "Apple",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2658,10 +2658,10 @@
     {
       "id": 7,
       "product_name": "Samsung 22 Ultra ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/cwfh2v6l3wiu3-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/cwfh2v6l3wiu3-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "65000",
-      "company": "Samsung",
+      "brand": "Samsung",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2669,10 +2669,10 @@
     {
       "id": 8,
       "product_name": "Redmi note 9 pro max ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/maagjtybh1w2-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/maagjtybh1w2-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "12000",
-      "company": "Mi",
+      "brand": "Mi",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2680,10 +2680,10 @@
     {
       "id": 9,
       "product_name": " Vivo X70 Pro Plus ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/41jco0u2eq952-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/41jco0u2eq952-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "55000",
-      "company": "Vivo",
+      "brand": "Vivo",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2691,10 +2691,10 @@
     {
       "id": 10,
       "product_name": "Oppo F17 Pro 8",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/jrs1mchgu1p21-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/jrs1mchgu1p21-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "12500",
-      "company": "Oppo",
+      "brand": "Oppo",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2702,10 +2702,10 @@
     {
       "id": 11,
       "product_name": "IPhone 11",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/40ll8qmop34i2-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/40ll8qmop34i2-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "45500",
-      "company": "Apple",
+      "brand": "Apple",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2713,10 +2713,10 @@
     {
       "id": 12,
       "product_name": "Samsung 22 Ultra ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/cwfh2v6l3wiu3-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/cwfh2v6l3wiu3-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "65000",
-      "company": "Samsung",
+      "brand": "Samsung",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2724,10 +2724,10 @@
     {
       "id": 13,
       "product_name": "Redmi note 9 pro max ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/maagjtybh1w2-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/maagjtybh1w2-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "12000",
-      "company": "Mi",
+      "brand": "Mi",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2735,10 +2735,10 @@
     {
       "id": 14,
       "product_name": " Vivo X70 Pro Plus ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/41jco0u2eq952-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/41jco0u2eq952-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "55000",
-      "company": "Vivo",
+      "brand": "Vivo",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2746,10 +2746,10 @@
     {
       "id": 15,
       "product_name": "Oppo F17 Pro 8",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/jrs1mchgu1p21-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/jrs1mchgu1p21-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "12500",
-      "company": "Oppo",
+      "brand": "Oppo",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2757,10 +2757,10 @@
     {
       "id": 16,
       "product_name": "IPhone 11",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/40ll8qmop34i2-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/40ll8qmop34i2-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "45500",
-      "company": "Apple",
+      "brand": "Apple",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2768,10 +2768,10 @@
     {
       "id": 17,
       "product_name": "Samsung 22 Ultra ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/cwfh2v6l3wiu3-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/cwfh2v6l3wiu3-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "65000",
-      "company": "Samsung",
+      "brand": "Samsung",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2779,10 +2779,10 @@
     {
       "id": 18,
       "product_name": "Redmi note 9 pro max ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/maagjtybh1w2-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/maagjtybh1w2-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "12000",
-      "company": "Mi",
+      "brand": "Mi",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2790,10 +2790,10 @@
     {
       "id": 19,
       "product_name": " Vivo X70 Pro Plus ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/41jco0u2eq952-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/41jco0u2eq952-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "55000",
-      "company": "Vivo",
+      "brand": "Vivo",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2801,10 +2801,10 @@
     {
       "id": 20,
       "product_name": "Oppo F17 Pro 8",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/jrs1mchgu1p21-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/jrs1mchgu1p21-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "12500",
-      "company": "Oppo",
+      "brand": "Oppo",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2812,10 +2812,10 @@
     {
       "id": 21,
       "product_name": "IPhone 11",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/40ll8qmop34i2-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/40ll8qmop34i2-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "45500",
-      "company": "Apple",
+      "brand": "Apple",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2823,10 +2823,10 @@
     {
       "id": 22,
       "product_name": "Samsung 22 Ultra ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/cwfh2v6l3wiu3-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/cwfh2v6l3wiu3-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "65000",
-      "company": "Samsung",
+      "brand": "Samsung",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2834,10 +2834,10 @@
     {
       "id": 23,
       "product_name": "Redmi note 9 pro max ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/maagjtybh1w2-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/maagjtybh1w2-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "12000",
-      "company": "Mi",
+      "brand": "Mi",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2845,10 +2845,10 @@
     {
       "id": 24,
       "product_name": " Vivo X70 Pro Plus ",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/41jco0u2eq952-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/41jco0u2eq952-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "55000",
-      "company": "Vivo",
+      "brand": "Vivo",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"
@@ -2856,10 +2856,10 @@
     {
       "id": 25,
       "product_name": "Oppo F17 Pro 8",
-      "img": "https://apollo-singapore.akamaized.net/v1/files/jrs1mchgu1p21-IN/image;s=780x0;q=60",
+      "img": ["https://apollo-singapore.akamaized.net/v1/files/jrs1mchgu1p21-IN/image;s=780x0;q=60"],
       "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
       "price": "12500",
-      "company": "Oppo",
+      "brand": "Oppo",
       "rating": 4.3,
       "category": "mobile",
       "type": "electronics"

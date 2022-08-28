@@ -114,7 +114,7 @@ const Navbar = () => {
         >
           <BsBell />
         </Box>
-       {isAuth ? (
+        {isAuth ? (
           <div className={"afterSignin"}>
             <Avatar name="Ryan Florence" src="https://bit.ly/ryan-florence" />
             <div>
@@ -136,13 +136,15 @@ const Navbar = () => {
             </Link>
           </>
         )}
-        <Box cursor={"pointer"} className={"navbar_icon"}>
-          <Image
-            src="https://user-images.githubusercontent.com/91020498/186889937-a920358d-9d24-41dd-b3e3-9de04f0082dc.jpg"
-            alt="sell icon"
-            maxWidth={"65px"}
-          />
-        </Box>
+        <Link to={"/adddata"}>
+          <Box cursor={"pointer"} className={"navbar_icon"}>
+            <Image
+              src="https://user-images.githubusercontent.com/91020498/186889937-a920358d-9d24-41dd-b3e3-9de04f0082dc.jpg"
+              alt="sell icon"
+              maxWidth={"65px"}
+            />
+          </Box>
+        </Link>
       </Flex>
     </Box>
   );

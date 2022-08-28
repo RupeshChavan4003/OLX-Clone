@@ -41,7 +41,7 @@ const CarPage = () => {
           CATEGORY</p>
           <div style={{display:"flex",padding:"2%"}}>
           <p className='mobile_div1_innerTitle2'> Mobile /     Mobile phones</p>
-          <Link className="mobile_div1_link1 "  to="/addData">Change</Link>
+          <Link className="mobile_div1_link1 "  to="/adddata">Change</Link>
           </div>
           <hr />
        

@@ -1,13 +1,10 @@
 import {
   Box,
   Checkbox,
-  CheckboxGroup,
   Flex,
   Grid,
   GridItem,
   Input,
-  Stack,
-  TagLabel,
   Text,
 } from "@chakra-ui/react";
 
@@ -20,24 +17,25 @@ import SearchBrand from "../Components/SearchBrand";
 import Singleproduct from "../Components/Singleproduct";
 import { getAllProducts } from "../Redux/ProductsReducer/action";
 
-import { useSearchParams } from "react-router-dom";
+// import { useSearchParams } from "react-router-dom";
 
 const Productspage = () => {
   const dispatch = useDispatch();
   const { category } = useParams();
   let data = useSelector((state) => state.ProductsReducer.data);
-  const [searchParams, setSearchParams] = useSearchParams();
-  const { brand } = searchParams;
-  console.log(brand);
+  // const [searchParams, setSearchParams] = useSearchParams();
+  // const { brand } = searchParams;
+  // console.log(brand);
 
   //const { brand } = searchParams;
 
   //console.log(data);
   useEffect(() => {
     dispatch(getAllProducts(category));
-  }, [category]);
+  }, [category,dispatch]);
   return (
     //products page layout completed
+    <>
     <Box>
       <Flex justifyContent="center" marginTop="150px">
         <Box
@@ -177,7 +175,7 @@ const Productspage = () => {
             </Box>
           </Box>
         </Box>
-        <Box width="65%" height="250vh">
+        <Box width="65%">
           <GridItem>
             <Grid
               templateColumns="repeat(3,1fr)"
@@ -189,18 +187,17 @@ const Productspage = () => {
               {data.length > 0 &&
                 data.map((item) => {
                   return (
-                    <Link to={`/products/${item.category}/${item.id}`}>
-                      <Singleproduct key={item.id} {...item} />;
+                    <Link to={`/products/${item.category}/${item.id}`} key={item.id}>
+                      <Singleproduct  {...item} />
                     </Link>
-                  );
+                  )
                 })}
             </Grid>
           </GridItem>
         </Box>
       </Flex>
     </Box>
-
-    // <Box border="1px solid black " width="50%" height="250vh"></Box>
+    </>
   );
 };
 
