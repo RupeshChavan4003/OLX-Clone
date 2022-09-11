@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+# Olx.in
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Team members:
+1. Rupesh Chavan (Team Lead)
+2. Ravi Ranjan
+3. Anurag Singh Rajawat
+4. RAVI BHUSHAN
+5. Rasheed shaik
 
-## Available Scripts
 
-In the project directory, you can run:
+## Project Details:
+The OLX marketplace is a platform for buying and selling services and goods such as electronics, fashion items, furniture, household goods, cars and bikes.
 
-### `npm start`
+The project has been completed within the duration of 5 days. Each of us had shared work and responsibilities and learnt a lot during the course of this project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Original website link**: https://www.olx.in/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack and features
+- React
+- Redux
+- Redux Thunks
+- Reqres api (login)
+- Json-Server
+- Chakra UI
+- React Slick-Slider
+- React-icons
+- Protected Routes(only accesible after login)
+- Responsiveness
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Glimpse and screenshots of our website:
 
-### `npm run build`
+**Landing Page**
+![Screenshot_226](https://user-images.githubusercontent.com/91020498/189518339-de8b749d-73fa-4057-8680-aba2975f1afa.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot_227](https://user-images.githubusercontent.com/91020498/189518343-3c908cf7-113e-4cb8-ba80-dbaa16e0344f.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Screenshot_228](https://user-images.githubusercontent.com/91020498/189518345-58569616-190a-4234-9ac4-cbbfbd6c1142.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+**Login Page**
+![Screenshot_229](https://user-images.githubusercontent.com/91020498/189518350-4a39cf59-b926-491e-bf7b-4080567cc69e.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Product Page**
+![Screenshot_231](https://user-images.githubusercontent.com/91020498/189518387-931907c3-54dd-445c-9ef1-ecf3995af4fa.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Screenshot_232](https://user-images.githubusercontent.com/91020498/189518394-18f87fd5-2bcd-4e41-9ee1-c79fc207abff.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+** Single Product Page**
+![Screenshot_233](https://user-images.githubusercontent.com/91020498/189518374-7d7b66fb-91e5-4914-b47a-3df81c54fbc8.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Screenshot_234](https://user-images.githubusercontent.com/91020498/189518379-de9d9784-5619-4877-b2f5-30d2e8b21356.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Sell Page**
+![Screenshot_230](https://user-images.githubusercontent.com/91020498/189518365-d5889e39-24f9-40a5-a5d2-bb880a96f3f8.png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Post your ad Page**
+![Screenshot_235](https://user-images.githubusercontent.com/91020498/189518380-5afa2082-06b1-41b8-a4c6-de82d3423178.png)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Team Members Contributions:
+ ⁍ Rupesh Chavan:
+ 
+    Contribution:
 
-### Advanced Configuration
+    1. Developed the Product Page.
+    2. Added sorting and filtering to product page.
+    
+   
+    
+   
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  ⁍ Ravi Ranjan :
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Contribution:
+
+    1. Created database for all the page of various product .
+    2. Created Navbar of the website.
+    3. Created Login page of website.
+    4. created the slider for all the page.
+    4. Added all routes to all pages.
+    5. Deployed the backend on heroku with json server.
+    6. added media queries to navbar and landing page.
+    7. Authenticated user using reqres.in
+    
+
+<br>
+
+  ⁍ Anurag Singh Rajawat:
+
+    Contribution:
+    1. Created Sell page .
+    2. Created add posted page.
+    3. Created post added forms.
+    
+    
+
+<br>
+
+  ⁍ RAVI BHUSHAN:
+
+    Contribution:
+    
+    1. Created Single product page .
+    
+    
+  <br>
+
+  ⁍ Rasheed shaik:
+
+    Contribution:
+
+    1. Created Fresh Recomendation section of landing and all categories sub heading page.
+    2. Footer of the website.
+    
+
+    
+
+ 
