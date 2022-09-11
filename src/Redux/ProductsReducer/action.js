@@ -10,7 +10,7 @@ export const getAllProducts = (category, params) => (dispatch) => {
 
   return axios
 
-    .get(`http://localhost:8080/${category}`, params)
+    .get(`https://aberranttexturemasai.herokuapp.com/${category}`, params)
   .then((res) => {
       // console.log(res.data);
       dispatch({ type: GET_ALLPRODUCTS_SUCCESS, payload: res.data });

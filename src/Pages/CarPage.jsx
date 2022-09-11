@@ -27,7 +27,7 @@ const CarPage = () => {
     // },[])
 
     const funSubmit=()=>{
-        axios.post("http://localhost:8080/cars",bike)
+        axios.post("https://aberranttexturemasai.herokuapp.com/cars",bike)
         .then((res)=>{console.log(res)})
         .catch((err)=>{console.log(err)})
          

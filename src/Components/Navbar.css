@@ -1,26 +1,26 @@
-@media (max-width: 499px) {
+@media (max-width: 730px) {
     .navbar_search_bar{
-     display: none;
+     display:none;
     }
     .navbar_logo{
      width:30%;
     }
     .navbar_icon {
-     font-size: 25px;
+     font-size: 35px;
    }
    }
 
-   @media (max-width: 799px) {
+    @media (max-width: 1080px) {
     .navbar_search_bar{
-     display: none;
+     display:none;
     }
     .navbar_logo{
      width:30%;
     }
     .navbar_icon {
-     font-size: 25px;
+     font-size: 35px;
    }
-   }
+   } 
 .afterSignin{
     display:flex;
     align-items:center;
@@ -31,4 +31,4 @@
 }
 .afterSignin p:nth-child(2){
     font-size: 13px;
-}
+} 

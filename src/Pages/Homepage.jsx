@@ -20,7 +20,7 @@ const HomePage = () => {
   const getProducts = () => {
     dispatch(getProductRequest());
     axios
-      .get("http://localhost:8080/cars")
+      .get("https://aberranttexturemasai.herokuapp.com/cars")
       .then((res) => dispatch(getProductSuccess(res.data)))
       .catch((err) => dispatch(getProductFailure(err)));
   };

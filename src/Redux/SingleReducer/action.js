@@ -6,7 +6,7 @@ export const getSingleProducts = (category, id) => (dispatch) => {
   
     return axios
   
-      .get(`http://localhost:8080/${category}/${id}`)
+      .get(`https://aberranttexturemasai.herokuapp.com/${category}/${id}`)
     .then((res) => {
         // console.log(res.data);
         dispatch({ type: GET_SINGLEPRODUCTS_SUCCESS, payload: res.data });
